@@ -1,0 +1,59 @@
+/* Variables de color temáticas de Bolivia */
+:root {
+    --rojo-bol: #D52B1E;
+    --amarillo-bol: #F9E300;
+    --verde-bol: #007934;
+    --oscuro: #1A252F;
+    --claro: #F8F9FA;
+}
+
+/* Animación de carga suave para las páginas */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--claro);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar personalizado */
+.bg-bolivia {
+    background-color: var(--oscuro) !important;
+    border-bottom: 4px solid var(--verde-bol);
+}
+
+.navbar-brand span:nth-child(1) { color: var(--rojo-bol); font-weight: bold; }
+.navbar-brand span:nth-child(2) { color: var(--amarillo-bol); font-weight: bold; }
+.navbar-brand span:nth-child(3) { color: var(--verde-bol); font-weight: bold; }
+
+/* Efecto Hover en Tarjetas y Galería (Animación CSS3) */
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.img-hover {
+    transition: transform 0.5s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--oscuro);
+    color: rgb(255, 255, 255);
+    border-top: 4px solid var(--rojo-bol);
+}
